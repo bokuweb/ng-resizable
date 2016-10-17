@@ -3,7 +3,7 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "resizable",
   template: `
-    <div class="card">resizable</div>
+    <input type="file" />
   `
 })
 export class Resizable {
