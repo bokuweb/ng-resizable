@@ -1,11 +1,11 @@
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "resizable",
   template: `
-    <input type="file" />
+    <div>Hello world</div>
   `
 })
 export class Resizable {
-  // @Input() subtitle: string;
+
 }

@@ -1,15 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'example-app',
+  selector: "example-app",
   styles: [`
 
   `],
   template: `
-    <div>
-      example
-      <resizable></resizable>
-    </div>
+    <div><resizable></resizable></div>
   `
 })
 export class Example {}
