@@ -25,6 +25,7 @@
     "zone.js": "^0.6.25"
   },
   "scripts": {
+    "start": "npm run watch:example",
     "build:example": "webpack -p",
     "watch:example": "webpack-dev-server -d --display-modules --progress --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
