@@ -4,7 +4,8 @@ import { Component } from "@angular/core";
   selector: "resizable",
   template: `
     <div>Hello world</div>
-  `
+  `,
+  styleUrls: ["./resizable.component.css"]
 })
 export class Resizable {
 
