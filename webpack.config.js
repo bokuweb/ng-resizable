@@ -19,7 +19,7 @@ module.exports = {
         exclude: /node_modules/
       }, {
         test: /\.css$/,
-        loaders: ['raw-loader', 'to-string', 'css-loader', 'postcss-loader']
+        loader: 'to-string!css-loader!postcss-loader!'
       },
     ]
   },
