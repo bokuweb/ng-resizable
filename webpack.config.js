@@ -12,9 +12,16 @@ module.exports = {
     // preLoaders: [{
     //   test: /\.ts$/, loader: 'tslint?emitErrors=false&failOnHint=false', exclude: /node_modules/
     // }],
-    loaders: [{
-      test: /\.ts$/, loader: 'ts', exclude: /node_modules/
-    }]
+    loaders: [
+      {
+        test: /\.ts$/,
+        loaders: ['ts', 'angular2-template-loader'],
+        exclude: /node_modules/
+      }, {
+        test: /\.css$/,
+        loader: 'to-string!css-loader!postcss-loader!'
+      },
+    ]
   },
   resolve: {
     extensions: ['', '.ts', '.js']
@@ -31,6 +38,11 @@ module.exports = {
     new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
       ENV: JSON.stringify(/*IS_PROD ? 'production' : */'development')
+    })
+  ],
+  postcss: [
+    require('postcss-cssnext')({
+      browsers: ['ie >= 9', 'last 2 versions']
     })
   ]
 };

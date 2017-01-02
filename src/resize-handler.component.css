@@ -3,5 +3,10 @@
   width: 20px;
   height: 20px;
   background: #ccc;
-  cursor: col-resize;
+  cursor: e-resize;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  right: 0;
+  bottom: 0;
 }

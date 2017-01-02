@@ -3,9 +3,9 @@ import { Component, Input } from "@angular/core";
 @Component({
   selector: "resize-handler",
   template: `
-    <div>resizable</div>
+    <div></div>
   `,
-  styleUrls: ["./resize-handler.component.css"],  
+  styleUrls: ["./resize-handler.component.css"],
 })
 export class ResizeHandlerComponent {
 }

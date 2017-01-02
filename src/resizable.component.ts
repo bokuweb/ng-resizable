@@ -1,11 +1,12 @@
-import { Component, Input } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "resizable",
   template: `
-    <div class="card">resizable</div>
-  `
+    <div></div>
+  `,
+  styleUrls: ["./resizable.component.css"]
 })
 export class Resizable {
-  // @Input() subtitle: string;
+
 }
