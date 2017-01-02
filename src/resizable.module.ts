@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { Resizable/*, ResizeHandle*/ } from './resizable.component';
+import { ResizableDirective } from './resizable.directive';
+import { ResizeHandlerComponent } from './resize-handler.component';
 
 @NgModule({
-  declarations: [Resizable/*, ResizeHandle*/],
-  exports: [Resizable/*, ResizeHandle */]
+  declarations: [ResizableDirective, ResizeHandlerComponent],
+  entryComponents: [ResizeHandlerComponent],
+  exports: [ResizableDirective],
 })
 export class ResizableModule {}

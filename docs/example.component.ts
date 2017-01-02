@@ -6,11 +6,8 @@ import { Component } from '@angular/core';
 
   `],
   template: `
-    <div>
-      example
-      <resizable></resizable>
-    </div>
-  `
+    <div resizable>example</div>
+  `,
+  styleUrls: ["./example.component.css"],
 })
 export class Example {}
-
