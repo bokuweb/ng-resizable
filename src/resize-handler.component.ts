@@ -1,11 +1,24 @@
-import { Component, Input } from "@angular/core";
+import { Component, OnInit, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
-  selector: "resize-handler",
+  selector: 'resize-handler',
   template: `
     <div></div>
   `,
-  styleUrls: ["./resize-handler.component.css"],
+  styleUrls: ['./resize-handler.component.css'],
 })
-export class ResizeHandlerComponent {
+export class ResizeHandlerComponent implements OnInit {
+
+  onHandleClick: EventEmitter<MouseEvent> = new EventEmitter(null);
+
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
+
+  @HostListener('mousedown', ['$event'])
+  onMousemove(event: MouseEvent): void {
+    this.onHandleClick.emit(event);
+  }
 }
